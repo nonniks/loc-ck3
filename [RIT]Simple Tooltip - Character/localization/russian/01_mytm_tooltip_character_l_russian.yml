@@ -1,0 +1,78 @@
+﻿l_russian:
+  ### 性格文本 ###
+  #性格概要
+  MYTM_PERSONALITY_SUMMARY_TT: "#T $game_concept_personality$ $ACTIVITY_PLANNER_SUMMARY$: #!\n$EFFECT_LIST_BULLET$$MYTM_AI_PERSONALITY_TT$[AddLocalizationIf( Character.IsRuler, 'AI_ECONOMIC_ARCHETYPE_TT' )][AddLocalizationIf( And( Not( Character.IsIndependentRuler ), Character.IsRuler ), 'AI_VASSAL_STANCE_TT' )]"
+  #性格数值
+  MYTM_PERSONALITY_VALUES_TT: "#T $game_concept_character_personality$: #!\n$EFFECT_LIST_BULLET$#E $motto_boldness$#!: [Character.GetAIBoldnessAsAffectedByPlayerDread|V]\n$EFFECT_LIST_BULLET$#E $player_facing_ai_honor$#!: [Character.GetAIHonor|V]  #E $player_facing_ai_greed$#!: [Character.GetAIGreed|V]  #E $player_facing_ai_rationality$#!: [Character.GetAIRationality|V]\n$EFFECT_LIST_BULLET$#E $player_facing_ai_zeal$#!: [Character.GetAIZeal|V]  #E $player_facing_ai_energy$#!: [Character.GetAIEnergy|V]  #E $player_facing_ai_sociability$#!: [Character.GetAISociability|V]\n$EFFECT_LIST_BULLET$#E $player_facing_ai_compassion$#!: [Character.GetAICompassion|V]  #E $player_facing_ai_vengefulness$#!: [Character.GetAIVengefulness|V]  #E $player_facing_ai_boldness$#!: [Character.GetAIBoldness|V]"
+  #角色性格
+  MYTM_AI_PERSONALITY_TT: "[character_personality|E]: [personality_i][Character.GetAIPersonality]"
+  #经济原型
+  MYTM_CHARACTER_ECONOMICAL_ARCHETYPE_TT: "[Character.Custom( 'AIEconomicPersonality' )]"
+  #封臣立场
+  MYTM_CHARACTER_VASSAL_STANCE_POSSESSIVE: "[Character.GetVassalStance.GetTextIcon][Character.GetVassalStance.GetName]"
+  MYTM_CHARACTER_VASSAL_STANCE_TT: "[Character.Custom( 'MYTM_CHARACTER_VASSAL_STANCE_LOC' )]"
+  #经济原型封臣立场
+  MYTM_CHARACTER_PERSONALITY_POSSESSIVE: "$MYTM_CHARACTER_ECONOMICAL_ARCHETYPE_TT$$MYTM_CHARACTER_VASSAL_STANCE_TT$\n"
+  MYTM_CHARACTER_PERSONALITY_TT: "[Character.Custom( 'MYTM_CHARACTER_PERSONALITY_LOC' )]"
+  ### 死亡原因 ###
+  MYTM_CHARACTER_DEAD_TOOLTIP: "#E $DEATH_REASON$#!: [Character.GetDeathReason|U]\n$MYTM_DEATH_DATE_TOOLTIP$[AddLocalizationIf( Character.GetKiller.IsValid, 'MYTM_KILLER_TT' )]"
+  MYTM_DEATH_DATE_TOOLTIP: "#E $DEATH_DATE$#!: [Character.GetDeathDate.GetString], [Character.GetAgeInfo]"
+  MYTM_KILLER_TT: "\n#N $crime_murderer$#!: [Character.GetKiller.GetUIName]"
+  ### 性取向 ###
+  MYTM_SEXUALITY_TT: "#E $gender_filter$#!: [Select_CString( Character.IsFemale, '#V $female_gender_filter|q$#!', '#V $male_gender_filter|q$#!' )]  #E $game_concept_sexuality$#!: [Character.GetSexuality|V]"
+  ### 生父 ###
+  MYTM_REAL_FATHER_TT: "[Select_CString( ObjectsEqual( Character.GetFather, Character.GetRealFather ), '', '#P $game_concept_real_father$#!: ' )][Select_CString( ObjectsEqual( Character.GetFather, Character.GetRealFather ), '', Character.GetRealFather.GetUIName )][Select_CString( ObjectsEqual( Character.GetFather, Character.GetRealFather ), '', '\n' )]"
+  ### 健康 ###
+  MYTM_WEIGHT_INFO_TT: "#E $RULER_DESIGNER_WEIGHT_LABEL$#!: [Character.GetCurrentWeight|0V]([Character.GetTargetWeight|0]±)"
+  MYTM_FERTILITY_INFO_TT: "#E $game_concept_fertility$#!: [Character.GetFertility|%0V]"
+  MYTM_STRESS_INFO_TT: "#E $game_concept_stress$#!: [Character.GetStress|0V]"
+  MYTM_HEALTH_INFO_TT: "#E $game_concept_health$#!: [Character.GetHealth|1V]"
+  MYTM_CHARACTER_HEALTH_TT: "$MYTM_HEALTH_INFO_TT$  $MYTM_FERTILITY_INFO_TT$  $MYTM_STRESS_INFO_TT$  $MYTM_WEIGHT_INFO_TT$"
+  ### 资源 ###
+  MYTM_GOLD_INFO_TT: "[gold_i][Character.GetGold|0V]"
+  MYTM_PRESTIGE_INFO_TT: "[prestige_i][Character.GetPrestige|0V]"
+  MYTM_PIETY_INFO_TT: "[piety_i][Character.GetPiety|0V]"
+  MYTM_INFLUENCE_INFO_LOC: "  [influence_i][Character.GetInfluence|0V]"
+  MYTM_INFLUENCE_INFO_TT: "[AddLocalizationIf( Character.GetGovernment.HasRule( 'administrative' ), 'MYTM_INFLUENCE_INFO_LOC' )]"
+  MYTM_HERD_INFO_LOC: "  [herd_i][Character.GetDomicile.GetHerd|0V]"
+  MYTM_HERD_INFO_TT: "[AddLocalizationIf( IsNomad( Character ), 'MYTM_HERD_INFO_LOC' )]"
+  MYTM_MILITARYSTRENGTH_INFO_LOC: "  [soldier_i][Character.GetMilitaryStrengthText|V]"
+  MYTM_MILITARYSTRENGTH_INFO_TT: "[AddLocalizationIf( Character.HasLandedTitles, 'MYTM_MILITARYSTRENGTH_INFO_LOC' )]"
+  MYTM_RESOURCE_INFO_TT: "$MYTM_GOLD_INFO_TT$  $MYTM_PRESTIGE_INFO_TT$  $MYTM_PIETY_INFO_TT$$MYTM_HERD_INFO_TT$$MYTM_INFLUENCE_INFO_TT$$MYTM_MILITARYSTRENGTH_INFO_TT$"
+  MYTM_CHARACTER_STATE_RESOURCE_POSSESSIVE: "\n$MYTM_RESOURCE_INFO_TT$"
+  MYTM_CHARACTER_STATE_RESOURCE_TT: "[Character.Custom( 'MYTM_CHARACTER_STATE_RESOURCE_LOC' )]"
+  ### 属性 ###
+  MYTM_SKILL_INFO_TT: "[diplomacy_i][Character.GetSkill( 'diplomacy' )|V]  [martial_i][Character.GetSkill( 'martial' )|V]  [stewardship_i][Character.GetSkill( 'stewardship' )|V]  [intrigue_i][Character.GetSkill( 'intrigue' )|V]  [learning_i][Character.GetSkill( 'learning' )|V]  [prowess_i][Character.GetSkill( 'prowess' )|V]"
+  MYTM_GOVERNOR_EFFICIENCY_INFO_LOC: "  $ADMIN_WINDOW_THEME_GOVERNOR_EFFICIENCY_VALID$"
+  MYTM_GOVERNOR_EFFICIENCY_INFO_TT: "[AddLocalizationIf( Or( Character.GetGovernment.HasRule( 'administrative' ), And( And( Not( Character.HasLandedTitles ), Not( Character.HasLiege ) ), GetPlayer.GetGovernment.HasRule( 'administrative' ) ) ), 'MYTM_GOVERNOR_EFFICIENCY_INFO_LOC' )]"
+  MYTM_CHARACTER_STATE_SKILL_POSSESSIVE: "\n$MYTM_SKILL_INFO_TT$$MYTM_GOVERNOR_EFFICIENCY_INFO_TT$"
+  MYTM_CHARACTER_STATE_SKILL_TT: "[Character.Custom( 'MYTM_CHARACTER_STATE_SKILL_LOC' )]"
+  ### 人物ID ###
+  MYTM_CHARACTER_ID_POSSESSIVE: "#E ID#!: [Character.GetID|V]  #E $DETAILS_TAB_HISTORY$ ID#!: [Character.GetHistoryId|V])\n"
+  MYTM_CHARACTER_ID_TT: "[Character.Custom( 'MYTM_CHARACTER_ID_LOC' )]"
+  ### 总结 ###
+  MYTM_TOOLTIP_CHARACTER_EMPTY_LOC: ""
+  MYTM_CHARACTER_INFO_TT: "$MYTM_REAL_FATHER_TT$$MYTM_CHARACTER_ID_TT$$MYTM_SEXUALITY_TT$\n$MYTM_CHARACTER_HEALTH_TT$$MYTM_CHARACTER_PERSONALITY_TRAIT_TT$$MYTM_CHARACTER_STATE_SKILL_TT$$MYTM_CHARACTER_STATE_RESOURCE_TT$"
+  ### 决议 ###
+  mytm_simple_tooltip_character_decisions: "Простой дисплей с большим количеством информации о персонаже"
+  mytm_simple_tooltip_character_decisions_desc: "Изменить элементы, отображаемые всплывающей информационной панелью персонажа"
+  mytm_simple_tooltip_character_decisions_tooltip: "$mytm_simple_tooltip_character_decisions_desc$"
+  mytm_simple_tooltip_character_decisions_confirm: "$CONFIRM$"
+  mytm_simple_tooltip_character_decisions_second_step_button: "$mytm_simple_tooltip_character_decisions_confirm$"
+  mytm_simple_tooltip_character_event_base.title: "Всплывающая информация о персонаже"
+  mytm_simple_tooltip_character_flag_character_state_skill_on: "#E $game_concept_character$#! [skills|E]: #P $MY_REALM_WINDOW_SHOW$#!"
+  mytm_simple_tooltip_character_flag_character_state_skill_off: "#E $game_concept_character$#! [skills|E]: #N $MY_REALM_WINDOW_HIDE$#!"
+  mytm_simple_tooltip_character_flag_character_state_resource_on: "#E $game_concept_character$ $lesson_basics_quick_resources_1$#!: #P $MY_REALM_WINDOW_SHOW$#!"
+  mytm_simple_tooltip_character_flag_character_state_resource_off: "#E $game_concept_character$ $lesson_basics_quick_resources_1$#!: #N $MY_REALM_WINDOW_HIDE$#!"
+  mytm_simple_tooltip_character_flag_character_vassal_stance_on: "[vassal_stance|E]: #P $MY_REALM_WINDOW_SHOW$#!"
+  mytm_simple_tooltip_character_flag_character_vassal_stance_off: "[vassal_stance|E]: #N $MY_REALM_WINDOW_HIDE$#!"
+  mytm_simple_tooltip_character_flag_character_economical_archetype_on: "[economical_archetype|E]: #P $MY_REALM_WINDOW_SHOW$#!"
+  mytm_simple_tooltip_character_flag_character_economical_archetype_off: "[economical_archetype|E]: #N $MY_REALM_WINDOW_HIDE$#!"
+  mytm_simple_tooltip_character_flag_character_id_on: "#E $game_concept_character$ ID#!: #P $MY_REALM_WINDOW_SHOW$#!"
+  mytm_simple_tooltip_character_flag_character_id_off: "#E $game_concept_character$ ID#!: #N $MY_REALM_WINDOW_HIDE$#!"
+  mytm_simple_tooltip_character_flag_character_state_resource_on_desc: "\n$mytm_simple_tooltip_character_flag_character_state_resource_on$"
+  mytm_simple_tooltip_character_flag_character_state_resource_off_desc: "\n$mytm_simple_tooltip_character_flag_character_state_resource_off$"
+  mytm_simple_tooltip_character_flag_character_vassal_stance_on_desc: "\n$mytm_simple_tooltip_character_flag_character_vassal_stance_on$"
+  mytm_simple_tooltip_character_flag_character_vassal_stance_off_desc: "\n$mytm_simple_tooltip_character_flag_character_vassal_stance_off$"
+  mytm_simple_tooltip_character_flag_character_id_on_desc: "\n$mytm_simple_tooltip_character_flag_character_id_on$"
+  mytm_simple_tooltip_character_flag_character_id_off_desc: "\n$mytm_simple_tooltip_character_flag_character_id_off$"

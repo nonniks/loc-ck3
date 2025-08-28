@@ -1,0 +1,18 @@
+﻿l_russian:
+  ### Взаимодействия с персонажами ###
+  mytm_subject_manager_change_government_interactions: "Изменить тип правления"
+  mytm_subject_manager_change_government_interactions_desc: ""
+  mytm_flag_become_feudal_government: "[GetGovernment('feudal_government').GetNameWithIcon]"
+  mytm_flag_become_republic_government: "[GetGovernment('republic_government').GetNameWithIcon]"
+  mytm_flag_become_theocracy_government: "[GetGovernment('theocracy_government').GetNameWithIcon]"
+  mytm_flag_become_clan_government: "[GetGovernment('clan_government').GetNameWithIcon]"
+  mytm_flag_become_tribal_government: "[GetGovernment('tribal_government').GetNameWithIcon]"
+  mytm_flag_become_administrative_government: "[GetGovernment('administrative_government').GetNameWithIcon]"
+  mytm_flag_become_landless_adventurer_government: "[GetGovernment('landless_adventurer_government').GetNameWithIcon]"
+  mytm_flag_become_nomad_government: "[GetGovernment('nomad_government').GetNameWithIcon]"
+  mytm_flag_become_herder_government: "[GetGovernment('herder_government').GetNameWithIcon]"
+  # Отозвать вассала
+
+  mytm_subject_manager_retract_vassal_interaction: "Простой отзыв вассала"
+  mytm_subject_manager_retract_vassal_interaction_desc: ""
+  recipient_secondary_mytm_subject_manager_retract_vassal_interaction: "[vassal|E]"

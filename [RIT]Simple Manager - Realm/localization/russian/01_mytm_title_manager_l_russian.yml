@@ -1,0 +1,52 @@
+﻿l_russian:
+  ### Взаимодействия с персонажами ###
+  mytm_title_manager_interactions: "Простое управление титулами"
+  mytm_title_manager_interactions_desc: "$mytm_transfer_title_de_jure_valid_tt$"
+  ### Основы ###
+
+  mytm_target_title_base: "#N Текущий титул#!"
+  mytm_target_title: "@titles_icon!$mytm_target_title_base$"
+  mytm_designee_title_base: "#P Целевой титул#!"
+  mytm_designee_title: "@liege_icon!$mytm_designee_title_base$"
+  ### События ###
+
+  mytm_title_manager_event_base.title: "$mytm_target_title$: [mytm_target_title.GetName]"
+  mytm_title_manager_event_base.desc: "$mytm_transfer_title_de_jure_valid_tt$"
+  mytm_title_manager_event_base.mytm_designee_title_desc: "#bold;size:18 Есть $mytm_designee_title$: [mytm_designee_title.GetName]#!\n"
+  mytm_title_manager_event_empty_desc: ""
+  ## Назначить целевой титул ##
+
+  mytm_title_manager_option_flag_designee_title_set: "Назначить $mytm_designee_title$"
+  mytm_add_flags_mytm_designee_title_tooltip: "[mytm_target_title.GetName] назначен как $mytm_designee_title$"
+  mytm_designee_title_tooltip_has: "Есть $mytm_designee_title$: [mytm_designee_title.GetName]"
+  ## Очистить целевой титул ##
+
+  mytm_title_manager_option_flag_designee_title_clear: "Очистить $mytm_designee_title$"
+  mytm_clear_flags_mytm_designee_title_tooltip: "[mytm_designee_title.GetName] больше не является $mytm_designee_title$"
+  ## Настроить де-юре титул ##
+
+  mytm_title_manager_option_flag_transfer_title_de_jure: "Изменить @de_jure_cb_icon!#E де-юре#! [de_jure|E] титула"
+  mytm_has_designee_title_tt: "Есть $mytm_designee_title$"
+  mytm_has_duchy_designee_title_tt: "Есть $mytm_designee_title$ не ниже ранга [duchy|E]"
+  mytm_target_title_is_same_designee_title_tt: "$mytm_target_title$ не может совпадать с $mytm_designee_title$"
+  mytm_transfer_title_de_jure_valid_tt: "$mytm_designee_title$ должен быть равного или более высокого ранга, чем $mytm_target_title$"
+  mytm_need_designee_title_tt: "#T @warning_icon!Нужен $mytm_designee_title$ и $mytm_target_title_is_same_designee_title_tt$"
+  mytm_transfer_titles_de_jure_tt: "$mytm_designee_title$ становится [de_jure|E]-сюзереном для $mytm_target_title$"
+  mytm_transfer_titles_de_jure_equal_tt: "$mytm_designee_title$ становится [de_jure|E]-сюзереном для подчинённых титулов $mytm_target_title$"
+  mytm_transfer_titles_is_de_jure_tt: "$mytm_designee_title$ уже является [de_jure|E]-сюзереном $mytm_target_title$"
+  ## Копировать историю титула ##
+
+  mytm_title_manager_option_flag_copy_title_history: "Скопировать @chronicler_court_position_icon!#E историю титула#!"
+  ## Пожаловать титулы ##
+
+  mytm_title_manager_grant_titles_interaction: "Простое пожалование титулов"
+  mytm_title_manager_grant_titles_interaction_desc: "У этого взаимодействия почти нет ограничений, но и преимуществ оно не даёт."
+  ## Получить притязание на титул ##
+
+  mytm_title_manager_hof_ask_for_claim_interaction: "Получить притязание на титул"
+  mytm_title_manager_hof_ask_for_claim_interaction_desc: ""
+  #### Режим отладки ###
+
+  mytm_title_manager_option_flag_created_titles: "Создать @create_title_icon!$mytm_target_title_base$"
+  mytm_title_manager_option_flag_usurped_titles: "Узурпировать @revoke_title!$mytm_target_title_base$"
+  mytm_title_manager_option_flag_destroy_titles: "Уничтожить @raid_icon!$mytm_target_title_base$"

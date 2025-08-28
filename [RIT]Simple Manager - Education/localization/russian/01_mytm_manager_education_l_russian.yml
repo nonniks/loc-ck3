@@ -1,0 +1,84 @@
+﻿l_russian:
+  mytm_manager_education_decisions: "Простое управление образованием"
+  mytm_manager_education_decisions_desc: "Авто-образование ежегодно будет находить подходящего [guardian|E] для всех [children|E] старше 6 лет при [court|E]"
+  mytm_manager_education_decisions_tooltip: "$mytm_manager_education_decisions_desc$"
+  mytm_manager_education_decisions_confirm: "$CONFIRM$"
+  mytm_manager_education_decisions_second_step_button: "$CONFIRM$"
+  ## Enable Auto-Education ##
+
+  mytm_flag_auto_education_on: "Включить авто-образование"
+  mytm_flag_auto_education_on_tooltip: ""
+  mytm_flag_auto_education_on_warning_tooltip: "@alert_icon!Если перейти к новому персонажу нестандартным путём (например, $game_concept_depose$, $choose_destiny_header_text$ или через консоль), потребуется заново включить эту опцию"
+  mytm_var_auto_education_on: "#E Авто-образование#!:#P Включено#!"
+  mytm_var_auto_education_off: "#E Авто-образование#!:#N Выключено#!"
+  mytm_var_auto_education_on_tooltip: "$mytm_var_auto_education_on$"
+  mytm_var_auto_education_off_tooltip: "$mytm_var_auto_education_off$"
+  mytm_auto_education_send_to_university_tooltip: "[ward|E] всегда отправляется в университет бесплатно"
+  ## Immediate Education ##
+
+  mytm_flag_immediate_education_on: "Немедленно обучить [children|E] при [court|E]"
+  mytm_flag_immediate_education_on_tooltip: ""
+  mytm_manager_education_guardian_tt.aptitude: "[aptitude|E] опекуна: [guardian.GetCourtPositionAptitude( GetCourtPositionType( 'court_tutor_court_position' ) )]"
+  # Lack of Guardian
+
+  mytm_manager_education_lack_guardian_tt: "#X Подходящий [guardian|E] не найден#!"
+  mytm_manager_education_lack_guardian.title: "Авто-образование: отсутствует опекун"
+  mytm_manager_education_lack_guardian.desc: "У меня нет подходящего придворного, который мог бы служить [guardian|E] для детей"
+  # Education Reminder
+
+  mytm_flag_auto_set_education_remind_on: "Включить напоминания об образовании"
+  mytm_flag_auto_set_education_remind_on_tooltip: ""
+  mytm_event_auto_set_education_remind.title: "$mytm_flag_auto_set_education_remind_on$"
+  mytm_event_auto_set_education_remind.desc: "Напоминания об образовании будут оповещать о назначении опекунов для подходящих детей при включённом авто-образовании"
+  mytm_var_auto_set_education_remind_01: "Только наследник игрока"
+  mytm_var_auto_set_education_remind_01_tt: "\n#E Напоминание об образовании#!:#P $mytm_var_auto_set_education_remind_01$#!"
+  mytm_var_auto_set_education_remind_02: "Все дети"
+  mytm_var_auto_set_education_remind_02_tt: "\n#E Напоминание об образовании#!:#P $mytm_var_auto_set_education_remind_02$#!"
+  mytm_var_auto_set_education_remind_03: "Вся династия"
+  mytm_var_auto_set_education_remind_03_tt: "\n#E Напоминание об образовании#!:#P $mytm_var_auto_set_education_remind_03$#!"
+  mytm_var_auto_set_education_remind_04: "Все подопечные"
+  mytm_var_auto_set_education_remind_04_tt: "\n#E Напоминание об образовании#!:#P $mytm_var_auto_set_education_remind_04$#!"
+  mytm_manager_education_need_guardian.title: "Авто-образование: выбрать опекуна"
+  mytm_manager_education_need_guardian.desc: "[ward.GetName] достиг(ла) возраста для образования, нужно назначить [ward.GetHerHis] опекуна."
+  mytm_manager_education_need_guardian_tt: "Выбрать опекуна для [ward.GetName]"
+  mytm_valid_guardian_01: "[mytm_valid_guardian_01.GetShortUINameNoTooltip] выглядит подходящим"
+  mytm_valid_guardian_02: "[mytm_valid_guardian_02.GetShortUINameNoTooltip] тоже неплохой вариант"
+  mytm_valid_guardian_03: "[mytm_valid_guardian_03.GetShortUINameNoTooltip] может подойти"
+  mytm_valid_guardian_self: "Возьмусь лично"
+  ## Culture Conversion ##
+
+  mytm_flag_auto_education_convert_culture_off: "Отключить принятие [culture|E] игрока"
+  mytm_flag_auto_education_convert_culture_off_tooltip: ""
+  mytm_var_auto_education_convert_culture_on: "#E Принятие культуры#!:#P Включено#!"
+  mytm_var_auto_education_convert_culture_off: "#E Принятие культуры#!:#N Выключено#!"
+  mytm_var_auto_education_convert_culture_on_tooltip: "\n$mytm_var_auto_education_convert_culture_on$"
+  mytm_var_auto_education_convert_culture_off_tooltip: "\n$mytm_var_auto_education_convert_culture_off$"
+  ## Faith Conversion ##
+
+  mytm_flag_auto_education_convert_faith_off: "Отключить обращение в [faith|E] игрока"
+  mytm_flag_auto_education_convert_faith_off_tooltip: ""
+  mytm_var_auto_education_convert_faith_on: "#E Обращение в веру#!:#P Включено#!"
+  mytm_var_auto_education_convert_faith_off: "#E Обращение в веру#!:#N Выключено#!"
+  mytm_var_auto_education_convert_faith_on_tooltip: "\n$mytm_var_auto_education_convert_faith_on$"
+  mytm_var_auto_education_convert_faith_off_tooltip: "\n$mytm_var_auto_education_convert_faith_off$"
+  ## Set Default Education Focus ##
+
+  mytm_flag_auto_set_education_focus_on: "Выбрать [education_focus|E]"
+  mytm_flag_auto_set_education_focus_on_tooltip: ""
+  mytm_event_auto_set_education_focus.title: "$mytm_flag_auto_set_education_focus_on$"
+  mytm_event_auto_set_education_focus.desc: "Авто-образование всегда будет выбирать этот [education_focus|E] для [guardian|E], которые не посещали университет"
+  mytm_var_auto_set_focus_education_tooltip_diplomacy: "\n[education_focus|E]:#P $education_diplomacy$#!"
+  mytm_var_auto_set_focus_education_tooltip_martial: "\n[education_focus|E]:#P $education_martial$#!"
+  mytm_var_auto_set_focus_education_tooltip_stewardship: "\n[education_focus|E]:#P $education_stewardship$#!"
+  mytm_var_auto_set_focus_education_tooltip_intrigue: "\n[education_focus|E]:#P $education_intrigue$#!"
+  mytm_var_auto_set_focus_education_tooltip_learning: "\n[education_focus|E]:#P $education_learning$#!"
+  mytm_option_auto_set_focus_clear_all: "$TAX_SLOT_VASSAL_WINDOW_CLEAR_SELECTION$"
+  ## Dynasty Unlocks Tier 5 Education Traits ##
+
+  mytm_flag_dynasty_unlock_tier_5_education_on: "[dynasty|E] строит #E $mytm_modifier_dynasty_unlock_tier_5_education$#!"
+  mytm_flag_dynasty_unlock_tier_5_education_on_tooltip: "#T $mytm_modifier_dynasty_unlock_tier_5_education$#!\n$mytm_modifier_dynasty_unlock_tier_5_education_desc$"
+  mytm_modifier_dynasty_unlock_tier_5_education: "$library_education_04_domicile_building$"
+  mytm_modifier_dynasty_unlock_tier_5_education_desc: "$domicile_building_parameter_estate_unlock_tier_5_education$\nЕсли авто-образование включено, [children|E]$mytm_modifier_studying_at_better_university_desc$"
+  mytm_studying_at_better_university: "$mytm_modifier_studying_at_better_university_desc$!"
+  mytm_modifier_studying_at_better_university: "$trait_intellect_good_3$$game_concept_education$"
+  mytm_modifier_studying_at_better_university_desc: "Получат как минимум 4-го уровня [education_trait|E] по достижении [adulthood|E]"

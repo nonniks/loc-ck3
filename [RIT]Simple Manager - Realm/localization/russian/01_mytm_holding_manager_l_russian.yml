@@ -1,0 +1,100 @@
+﻿l_russian:
+  ### Взаимодействия с персонажами ###
+  mytm_holding_manager_interactions: "Простое управление владением"
+  mytm_holding_manager_interactions_desc: ""
+  ## События ##
+
+  mytm_holding_manager_event_base.title: "Простое управление владением"
+  mytm_holding_manager_event_base.desc: ""
+  ### Приключенец посещает владение ###
+
+  mytm_holding_manager_option_flag_visit_local_settlement: "Посетить@travel_icon! текущее владение"
+  mytm_holding_manager_option_flag_visit_local_settlement_tooltip: "@warning_icon! Эти параметры недоступны для [ruler|E], которые не являются [adventurer|E]:$visit_local_settlement_effect_supplies$$visit_local_settlement_effect_contracts$"
+  ### След легендарной охоты ###
+
+  mytm_holding_manager_option_flag_create_hunt_sighting: "Создать@activity_hunt![hunt_sighting|E]"
+  mytm_holding_manager_event_title.create_hunt_sighting: "Слухи о легендарной охоте"
+  mytm_holding_manager_event_desc.create_hunt_sighting: "Первые легендарные охоты редко оказываются успешными, не тратьте время на сохранения и перезагрузки."
+  mytm_holding_manager_option_flag_create_hunt_sighting.animaltype_01: "Мелкая дичь"
+  mytm_holding_manager_option_flag_create_hunt_sighting.animaltype_02: "Обычная дичь"
+  mytm_holding_manager_option_flag_create_hunt_sighting.animaltype_03: "Крупная дичь"
+  ### Профилактика чумы ###
+
+  mytm_holding_manager_option_flag_epidemic_resistance: "Увеличить@epidemic_icon![epidemic_resistance|E]"
+  mytm_holding_manager_event_title.epidemic_resistance: "Текущее владение: [mytm_target_title.GetName]"
+  mytm_modifier_epidemic_resistance: "Карантинный режим"
+  mytm_add_province_modifier.mytm_modifier_epidemic_resistance: "Текущее владение#P получает#!$game_concept_epidemic_resistance$"
+  mytm_remove_province_modifier.mytm_modifier_epidemic_resistance: "Текущее владение#N теряет#!$game_concept_epidemic_resistance$"
+  mytm_add_character_modifier.mytm_modifier_epidemic_resistance: "Текущий персонаж#P получает#!$game_concept_epidemic_resistance$"
+  mytm_remove_character_modifier.mytm_modifier_epidemic_resistance: "Текущий персонаж#N теряет#!$game_concept_epidemic_resistance$"
+  mytm_add_realm_modifier.mytm_modifier_epidemic_resistance: "[domain|E]#P получает#!$game_concept_epidemic_resistance$"
+  mytm_remove_realm_modifier.mytm_modifier_epidemic_resistance: "[domain|E]#N теряет#!$game_concept_epidemic_resistance$"
+  ### Изменить тип владения ###
+
+  mytm_holding_manager_change_holding_type_interactions: "Изменить тип владения"
+  mytm_holding_manager_change_holding_type_interactions_desc: ""
+  mytm_holding_manager_option_flag_change_holding_type: "Изменить@onmap_holding_icon![holding_type|E]"
+  mytm_holding_manager_event_title.change_holding_type: "Изменить тип владения"
+  mytm_exists_holding_type_tt: "#E [mytm_target_title.GetProvince.GetHolding.GetType.GetName]#!|[mytm_target_title.GetName] выбрано"
+  mytm_holding_manager_option_flag_remove_holding: "Уничтожить [barony|E], если это не [county_capital|E]"
+  mytm_remove_holding_tt: "[mytm_target_title.GetName] #N уничтожено#!"
+  ### ###
+
+  mytm_holding_manager_mass_select_interactions: "Управление зданиями домена"
+  mytm_holding_manager_mass_select_interactions_desc: ""
+  ### Добавить ячейку под здание ###
+
+  mytm_holding_manager_option_flag_add_building_slot: "Добавить@construct_economic_buildings_icon!#E ячейку под здание#!"
+  mytm_holding_manager_event_title.add_building_slot: "Новая ячейка под здание"
+  mytm_exists_building_slot_tt: "[mytm_target_title.GetName]: обычные ячейки зданий: #P [SCOPE.ScriptValue('mytm_value_exists_building_slot')|0]#!"
+  mytm_add_province_modifier.extra_building_slot: "Добавить#P 1#! дополнительную#E ячейку под здание#!"
+  mytm_add_province_modifier.extra_building_slot_5: "Добавить#P 5#! дополнительных#E ячеек под здания#!"
+  mytm_add_province_modifier.extra_building_slot_max_15: "Увеличить#E количество ячеек под здания#! до#P 15#!"
+  ### Возвести особые здания ###
+
+  mytm_holding_manager_option_flag_add_special_building: "Возвести@poi_special_buildings_wonder_icon![special_building|E]"
+  mytm_holding_manager_event_title.add_special_building: "Получена ячейка для $game_concept_special_building$"
+  # Университет
+
+  mytm_holding_manager_add_special_building.university: "[GetBuilding('generic_university').GetName]"
+  # Легендарные здания
+
+  mytm_holding_manager_add_special_building.legendary_shrine: "[GetBuilding('legendary_shrine').GetName]"
+  mytm_holding_manager_add_special_building.legendary_palace: "[GetBuilding('legendary_palace').GetName]"
+  mytm_holding_manager_add_special_building.legendary_statue: "[GetBuilding('legendary_statue').GetName]"
+  mytm_holding_manager_add_special_building.legendary_watchtower: "[GetBuilding('legendary_watchtower').GetName]"
+  mytm_holding_manager_add_special_building.legendary_hunting_lodge: "[GetBuilding('legendary_hunting_lodge').GetName]"
+  ### Перенести де-юре столицу ###
+
+  mytm_holding_manager_set_capital_interactions: "Перенести де-юре столицу"
+  mytm_holding_manager_set_capital_interactions_desc: ""
+  # Столица державы
+
+  mytm_holding_manager_option_flag_set_realm_capital: "Перенести@poi_capitals_icon![realm_capital|E]"
+  mytm_holding_manager_option_flag_set_realm_capital_valid: "Уже [realm_capital|E]"
+  # Де-юре столица
+
+  mytm_holding_manager_option_flag_set_capital: "Перенести@vassal_icon![de_jure_capital|E]"
+  mytm_holding_manager_option_flag_set_capital_valid: "Уже [de_jure_capital|E]"
+  mytm_holding_manager_option_flag_has_capital_valid: "Нет более высокого титула [de_jure|E]"
+  mytm_holding_manager_option_flag_set_duchy_capital: "Перенести столицу @duchy_icon![duchy|E]"
+  mytm_holding_manager_option_flag_set_kingdom_capital: "Перенести столицу @kingdom_icon![kingdom|E]"
+  mytm_holding_manager_option_flag_set_empire_capital: "Перенести столицу @empire_icon![empire|E]"
+  ### Конверсия культуры/веры во владении ###
+
+  mytm_holding_manager_conversion_faith_interactions: "Распространить веру/культуру"
+  mytm_holding_manager_conversion_faith_interactions_desc: ""
+  # Сменить веру
+
+  mytm_holding_manager_option_flag_conversion_faith: "Изменить@conversion_icon!веру графства ([faith|E])"
+  mytm_conversion_faith_titles_effect_tt: "Вера в [mytm_target_title.GetName] изменена на [mytm_target_character.GetFaith.GetName|V]"
+  # Сменить культуру
+
+  mytm_holding_manager_option_flag_promote_culture: "Изменить@promote_culture_icon!культуру графства ([culture|E])"
+  mytm_promote_culture_titles_effect_tt: "Культура в [mytm_target_title.GetName] изменена на [mytm_target_character.GetCulture.GetName|V]"
+  # Снести владения
+
+  mytm_holding_manager_raze_holding_interactions: "Массовый снос владений"
+  mytm_holding_manager_raze_holding_interactions_desc: "Это взаимодействие полностью уничтожит владения [barony|E], которые не являются [county_capital|E]. Поведение для [county_capital|E] зависит от типа правления: [nomadic|E] превращается в [nomadic_holding|E]; [tribal|E] — в [tribal_holding|E]; остальные — в [herder_holding|E]."
+  mytm_holding_manager_option_flag_raze_holding: "Снести@raze_icon! текущее владение"
+  mytm_raze_holding_tt: "[mytm_target_title.GetName] #N снесено#!"

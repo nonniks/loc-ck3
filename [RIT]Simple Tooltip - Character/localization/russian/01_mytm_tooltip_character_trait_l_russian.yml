@@ -1,0 +1,140 @@
+﻿l_russian:
+ ### 决议 ###
+ mytm_simple_tooltip_character_flag_personality_trait_on: "[personality_trait|E]: #P $MY_REALM_WINDOW_SHOW$#!"
+ mytm_simple_tooltip_character_flag_personality_trait_off: "[personality_trait|E]: #N $MY_REALM_WINDOW_HIDE$#!"
+ mytm_simple_tooltip_character_flag_personality_trait_on_desc: "\n$mytm_simple_tooltip_character_flag_personality_trait_on$"
+ mytm_simple_tooltip_character_flag_personality_trait_off_desc: "\n$mytm_simple_tooltip_character_flag_personality_trait_off$"
+ ### 性格特质 ###
+ MYTM_CHARACTER_PERSONALITY_TRAIT_TT: "[Character.Custom( 'MYTM_CHARACTER_PERSONALITY_TRAIT_LOC' )]"
+ MYTM_CHARACTER_PERSONALITY_TRAIT_POSSESSIVE: "\n#E $game_concept_personality$#!: $MYTM_PERSONALITY_TRAIT_INFO_TT$"
+ MYTM_PERSONALITY_TRAIT_INFO_TT: "$mytm_trait_chaste_tt$$mytm_trait_lustful_tt$$mytm_trait_temperate_tt$$mytm_trait_gluttonous_tt$$mytm_trait_generous_tt$$mytm_trait_greedy_tt$$mytm_trait_diligent_tt$$mytm_trait_lazy_tt$$mytm_trait_wrathful_tt$$mytm_trait_calm_tt$$mytm_trait_impatient_tt$$mytm_trait_patient_tt$$mytm_trait_humble_tt$$mytm_trait_arrogant_tt$$mytm_trait_deceitful_tt$$mytm_trait_honest_tt$$mytm_trait_craven_tt$$mytm_trait_brave_tt$$mytm_trait_shy_tt$$mytm_trait_gregarious_tt$$mytm_trait_ambitious_tt$$mytm_trait_content_tt$$mytm_trait_arbitrary_tt$$mytm_trait_just_tt$$mytm_trait_cynical_tt$$mytm_trait_zealous_tt$$mytm_trait_paranoid_tt$$mytm_trait_trusting_tt$$mytm_trait_compassionate_tt$$mytm_trait_callous_tt$$mytm_trait_sadistic_tt$$mytm_trait_stubborn_tt$$mytm_trait_fickle_tt$$mytm_trait_vengeful_tt$$mytm_trait_forgiving_tt$$mytm_trait_eccentric_tt$$mytm_trait_loyal_tt$$mytm_trait_disloyal_tt$$mytm_trait_rowdy_tt$$mytm_trait_charming_tt$$mytm_trait_curious_tt$$mytm_trait_pensive_tt$$mytm_trait_bossy_tt$ "
+ # chaste
+ mytm_trait_chaste_tt: "[Character.Custom( 'mytm_character_trait_chaste_loc' )]"
+ mytm_character_trait_chaste_loc_possessive: "@chaste_trait_icon!#V [GetTrait('chaste').GetName( ROOT.Char )]#!  "
+ # lustful
+ mytm_trait_lustful_tt: "[Character.Custom( 'mytm_character_trait_lustful_loc' )]"
+ mytm_character_trait_lustful_loc_possessive: "@lustful_trait_icon!#V [GetTrait('lustful').GetName( ROOT.Char )]#!  "
+ # temperate
+ mytm_trait_temperate_tt: "[Character.Custom( 'mytm_character_trait_temperate_loc' )]"
+ mytm_character_trait_temperate_loc_possessive: "@temperate_trait_icon!#V [GetTrait('temperate').GetName( ROOT.Char )]#!  "
+ # gluttonous
+ mytm_trait_gluttonous_tt: "[Character.Custom( 'mytm_character_trait_gluttonous_loc' )]"
+ mytm_character_trait_gluttonous_loc_possessive: "@gluttonous_trait_icon!#V [GetTrait('gluttonous').GetName( ROOT.Char )]#!  "
+ # generous
+ mytm_trait_generous_tt: "[Character.Custom( 'mytm_character_trait_generous_loc' )]"
+ mytm_character_trait_generous_loc_possessive: "@generous_trait_icon!#V [GetTrait('generous').GetName( ROOT.Char )]#!  "
+ # greedy
+ mytm_trait_greedy_tt: "[Character.Custom( 'mytm_character_trait_greedy_loc' )]"
+ mytm_character_trait_greedy_loc_possessive: "@greedy_trait_icon!#V [GetTrait('greedy').GetName( ROOT.Char )]#!  "
+ # diligent
+ mytm_trait_diligent_tt: "[Character.Custom( 'mytm_character_trait_diligent_loc' )]"
+ mytm_character_trait_diligent_loc_possessive: "@diligent_trait_icon!#V [GetTrait('diligent').GetName( ROOT.Char )]#!  "
+ # lazy
+ mytm_trait_lazy_tt: "[Character.Custom( 'mytm_character_trait_lazy_loc' )]"
+ mytm_character_trait_lazy_loc_possessive: "@lazy_trait_icon!#V [GetTrait('lazy').GetName( ROOT.Char )]#!  "
+ # wrathful
+ mytm_trait_wrathful_tt: "[Character.Custom( 'mytm_character_trait_wrathful_loc' )]"
+ mytm_character_trait_wrathful_loc_possessive: "@wrathful_trait_icon!#V [GetTrait('wrathful').GetName( ROOT.Char )]#!  "
+ # calm
+ mytm_trait_calm_tt: "[Character.Custom( 'mytm_character_trait_calm_loc' )]"
+ mytm_character_trait_calm_loc_possessive: "@calm_trait_icon!#V [GetTrait('calm').GetName( ROOT.Char )]#!  "
+ # impatient
+ mytm_trait_impatient_tt: "[Character.Custom( 'mytm_character_trait_impatient_loc' )]"
+ mytm_character_trait_impatient_loc_possessive: "@impatient_trait_icon!#V [GetTrait('impatient').GetName( ROOT.Char )]#!  "
+ # patient
+ mytm_trait_patient_tt: "[Character.Custom( 'mytm_character_trait_patient_loc' )]"
+ mytm_character_trait_patient_loc_possessive: "@patient_trait_icon!#V [GetTrait('patient').GetName( ROOT.Char )]#!  "
+ # humble
+ mytm_trait_humble_tt: "[Character.Custom( 'mytm_character_trait_humble_loc' )]"
+ mytm_character_trait_humble_loc_possessive: "@humble_trait_icon!#V [GetTrait('humble').GetName( ROOT.Char )]#!  "
+ # arrogant
+ mytm_trait_arrogant_tt: "[Character.Custom( 'mytm_character_trait_arrogant_loc' )]"
+ mytm_character_trait_arrogant_loc_possessive: "@arrogant_trait_icon!#V [GetTrait('arrogant').GetName( ROOT.Char )]#!  "
+ # deceitful
+ mytm_trait_deceitful_tt: "[Character.Custom( 'mytm_character_trait_deceitful_loc' )]"
+ mytm_character_trait_deceitful_loc_possessive: "@deceitful_trait_icon!#V [GetTrait('deceitful').GetName( ROOT.Char )]#!  "
+ # honest
+ mytm_trait_honest_tt: "[Character.Custom( 'mytm_character_trait_honest_loc' )]"
+ mytm_character_trait_honest_loc_possessive: "@honest_trait_icon!#V [GetTrait('honest').GetName( ROOT.Char )]#!  "
+ # craven
+ mytm_trait_craven_tt: "[Character.Custom( 'mytm_character_trait_craven_loc' )]"
+ mytm_character_trait_craven_loc_possessive: "@craven_trait_icon!#V [GetTrait('craven').GetName( ROOT.Char )]#!  "
+ # brave
+ mytm_trait_brave_tt: "[Character.Custom( 'mytm_character_trait_brave_loc' )]"
+ mytm_character_trait_brave_loc_possessive: "@brave_trait_icon!#V [GetTrait('brave').GetName( ROOT.Char )]#!  "
+ # shy
+ mytm_trait_shy_tt: "[Character.Custom( 'mytm_character_trait_shy_loc' )]"
+ mytm_character_trait_shy_loc_possessive: "@shy_trait_icon!#V [GetTrait('shy').GetName( ROOT.Char )]#!  "
+ # gregarious
+ mytm_trait_gregarious_tt: "[Character.Custom( 'mytm_character_trait_gregarious_loc' )]"
+ mytm_character_trait_gregarious_loc_possessive: "@gregarious_trait_icon!#V [GetTrait('gregarious').GetName( ROOT.Char )]#!  "
+ # ambitious
+ mytm_trait_ambitious_tt: "[Character.Custom( 'mytm_character_trait_ambitious_loc' )]"
+ mytm_character_trait_ambitious_loc_possessive: "@ambitious_trait_icon!#V [GetTrait('ambitious').GetName( ROOT.Char )]#!  "
+ # content
+ mytm_trait_content_tt: "[Character.Custom( 'mytm_character_trait_content_loc' )]"
+ mytm_character_trait_content_loc_possessive: "@content_trait_icon!#V [GetTrait('content').GetName( ROOT.Char )]#!  "
+ # arbitrary
+ mytm_trait_arbitrary_tt: "[Character.Custom( 'mytm_character_trait_arbitrary_loc' )]"
+ mytm_character_trait_arbitrary_loc_possessive: "@arbitrary_trait_icon!#V [GetTrait('arbitrary').GetName( ROOT.Char )]#!  "
+ # just
+ mytm_trait_just_tt: "[Character.Custom( 'mytm_character_trait_just_loc' )]"
+ mytm_character_trait_just_loc_possessive: "@just_trait_icon!#V [GetTrait('just').GetName( ROOT.Char )]#!  "
+ # cynical
+ mytm_trait_cynical_tt: "[Character.Custom( 'mytm_character_trait_cynical_loc' )]"
+ mytm_character_trait_cynical_loc_possessive: "@cynical_trait_icon!#V [GetTrait('cynical').GetName( ROOT.Char )]#!  "
+ # zealous
+ mytm_trait_zealous_tt: "[Character.Custom( 'mytm_character_trait_zealous_loc' )]"
+ mytm_character_trait_zealous_loc_possessive: "@zealous_trait_icon!#V [GetTrait('zealous').GetName( ROOT.Char )]#!  "
+ # paranoid
+ mytm_trait_paranoid_tt: "[Character.Custom( 'mytm_character_trait_paranoid_loc' )]"
+ mytm_character_trait_paranoid_loc_possessive: "@paranoid_trait_icon!#V [GetTrait('paranoid').GetName( ROOT.Char )]#!  "
+ # trusting
+ mytm_trait_trusting_tt: "[Character.Custom( 'mytm_character_trait_trusting_loc' )]"
+ mytm_character_trait_trusting_loc_possessive: "@trusting_trait_icon!#V [GetTrait('trusting').GetName( ROOT.Char )]#!  "
+ # compassionate
+ mytm_trait_compassionate_tt: "[Character.Custom( 'mytm_character_trait_compassionate_loc' )]"
+ mytm_character_trait_compassionate_loc_possessive: "@compassionate_trait_icon!#V [GetTrait('compassionate').GetName( ROOT.Char )]#!  "
+ # callous
+ mytm_trait_callous_tt: "[Character.Custom( 'mytm_character_trait_callous_loc' )]"
+ mytm_character_trait_callous_loc_possessive: "@callous_trait_icon!#V [GetTrait('callous').GetName( ROOT.Char )]#!  "
+ # sadistic
+ mytm_trait_sadistic_tt: "[Character.Custom( 'mytm_character_trait_sadistic_loc' )]"
+ mytm_character_trait_sadistic_loc_possessive: "@sadistic_trait_icon!#V [GetTrait('sadistic').GetName( ROOT.Char )]#!  "
+ # stubborn
+ mytm_trait_stubborn_tt: "[Character.Custom( 'mytm_character_trait_stubborn_loc' )]"
+ mytm_character_trait_stubborn_loc_possessive: "@stubborn_trait_icon!#V [GetTrait('stubborn').GetName( ROOT.Char )]#!  "
+ # fickle
+ mytm_trait_fickle_tt: "[Character.Custom( 'mytm_character_trait_fickle_loc' )]"
+ mytm_character_trait_fickle_loc_possessive: "@fickle_trait_icon!#V [GetTrait('fickle').GetName( ROOT.Char )]#!  "
+ # vengeful
+ mytm_trait_vengeful_tt: "[Character.Custom( 'mytm_character_trait_vengeful_loc' )]"
+ mytm_character_trait_vengeful_loc_possessive: "@vengeful_trait_icon!#V [GetTrait('vengeful').GetName( ROOT.Char )]#!  "
+ # forgiving
+ mytm_trait_forgiving_tt: "[Character.Custom( 'mytm_character_trait_forgiving_loc' )]"
+ mytm_character_trait_forgiving_loc_possessive: "@forgiving_trait_icon!#V [GetTrait('forgiving').GetName( ROOT.Char )]#!  "
+ # eccentric
+ mytm_trait_eccentric_tt: "[Character.Custom( 'mytm_character_trait_eccentric_loc' )]"
+ mytm_character_trait_eccentric_loc_possessive: "@eccentric_trait_icon!#V [GetTrait('eccentric').GetName( ROOT.Char )]#!  "
+ # loyal
+ mytm_trait_loyal_tt: "[Character.Custom( 'mytm_character_trait_loyal_loc' )]"
+ mytm_character_trait_loyal_loc_possessive: "@loyal_trait_icon!#V [GetTrait('loyal').GetName( ROOT.Char )]#!  "
+ # disloyal
+ mytm_trait_disloyal_tt: "[Character.Custom( 'mytm_character_trait_disloyal_loc' )]"
+ mytm_character_trait_disloyal_loc_possessive: "@disloyal_trait_icon!#V [GetTrait('disloyal').GetName( ROOT.Char )]#!  "
+ ### 童年特质 ###
+ # rowdy
+ mytm_trait_rowdy_tt: "[Character.Custom( 'mytm_character_trait_rowdy_loc' )]"
+ mytm_character_trait_rowdy_loc_possessive: "@rowdy_trait_icon!#V [GetTrait('rowdy').GetName( ROOT.Char )]#!  "
+ # charming
+ mytm_trait_charming_tt: "[Character.Custom( 'mytm_character_trait_charming_loc' )]"
+ mytm_character_trait_charming_loc_possessive: "@charming_trait_icon!#V [GetTrait('charming').GetName( ROOT.Char )]#!  "
+ # curious
+ mytm_trait_curious_tt: "[Character.Custom( 'mytm_character_trait_curious_loc' )]"
+ mytm_character_trait_curious_loc_possessive: "@curious_trait_icon!#V [GetTrait('curious').GetName( ROOT.Char )]#!  "
+ # pensive
+ mytm_trait_pensive_tt: "[Character.Custom( 'mytm_character_trait_pensive_loc' )]"
+ mytm_character_trait_pensive_loc_possessive: "@pensive_trait_icon!#V [GetTrait('pensive').GetName( ROOT.Char )]#!  "
+ # bossy
+ mytm_trait_bossy_tt: "[Character.Custom( 'mytm_character_trait_bossy_loc' )]"
+ mytm_character_trait_bossy_loc_possessive: "@bossy_trait_icon!#V [GetTrait('bossy').GetName( ROOT.Char )]#!  "

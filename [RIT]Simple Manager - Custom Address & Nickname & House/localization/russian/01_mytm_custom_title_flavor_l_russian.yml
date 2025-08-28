@@ -1,0 +1,107 @@
+﻿l_russian:
+  mytm_custom_title_flavor_holder_interactions: "Пользовательские стили титулов"
+  mytm_custom_title_flavor_holder_interactions_desc: ""
+  mytm_custom_only_holder_flavor: "Пользовательский #E стиль персонажа#!"
+  mytm_custom_title_flavor: "Пользовательский #E стиль титула#!"
+  # Пользовательские стили #
+
+  mytm_flag_custom_only_holder_flavor: "$mytm_custom_only_holder_flavor$"
+  mytm_flag_custom_only_holder_flavor_clear: "#N Очистить#!$mytm_custom_only_holder_flavor$"
+  mytm_flag_custom_title_flavor_title_inheirt: "$mytm_custom_title_flavor$"
+  mytm_flag_custom_title_flavor_modify: "#E Изменить#!$mytm_custom_title_flavor$"
+  mytm_flag_custom_title_flavor_modify_tt: "[mytm_target_title.GetName|U] изменяет $mytm_custom_title_flavor$"
+  mytm_flag_custom_title_flavor_clear: "#N Очистить#!$mytm_custom_title_flavor$"
+  mytm_flag_custom_title_flavor_paste: "#E Вставить#!$mytm_custom_title_flavor$"
+  mytm_flag_custom_title_flavor_paste_valid_tt: "#P Целевой персонаж#! жив и имеет $mytm_custom_title_flavor$"
+  mytm_flag_custom_title_flavor_paste_tt: "Скопировать $mytm_custom_title_flavor$ у [mytm_old_target.GetName]"
+  mytm_tooltip_use_custom_flavor_on: "#P Включить#!$mytm_custom_only_holder_flavor$"
+  mytm_tooltip_use_custom_flavor_off: "#N Очистить#!$mytm_custom_only_holder_flavor$"
+  mytm_tooltip_use_custom_flavor_title_on: "[mytm_target_title.GetName|U]#P Включить#!$mytm_custom_title_flavor$"
+  mytm_tooltip_use_custom_flavor_title_off: "[mytm_target_title.GetName|U]#N Очистить#!$mytm_custom_title_flavor$"
+  ## Тексты именования ##
+
+  mytm_house_flavor_empty: ""
+  mytm_custom_title_flavor_event_desc.empty: ""
+  ## Стили персонажа ##
+
+  mytm_custom_only_holder_flavor_event.title: "Пользовательский стиль персонажа: [mytm_target_recipient.GetShortUIName|U]"
+  mytm_custom_only_holder_flavor_event.desc: "$mytm_custom_only_holder_flavor$ будет утрачен после смерти персонажа, если только у персонажа также нет $mytm_custom_title_flavor$."
+  mytm_only_holder_flavor_text_default: ""
+  mytm_only_holder_flavor_desc_text_default: ""
+  # Личный стиль #
+
+  mytm_only_holder_flavor: "[CHARACTER.Custom( 'mytm_only_holder_flavor_loc' )]"
+  mytm_only_holder_flavor_possessive: "[GetTrait('mytm_custom_only_holder_flavor_trait').GetName( ROOT.Char )]"
+  trait_mytm_custom_only_holder_flavor_trait: "Стиль персонажа"
+  trait_mytm_custom_only_holder_flavor_trait_desc: "У этого персонажа есть ненаследуемый $mytm_custom_only_holder_flavor$"
+  trait_mytm_custom_only_holder_flavor_trait_exists_name: "[ROOT.Char.GetLocalizedText( 'mytm_only_holder_flavor_text' )]"
+  trait_mytm_custom_only_holder_flavor_trait_exists_desc: "#V [ROOT.Char.GetLocalizedText( 'mytm_only_holder_flavor_desc_text' )]#!"
+  # Безземельное поместье
+
+  mytm_only_holder_flavor_domicile_estate: "$mytm_only_holder_flavor$"
+  ## Стили титула ##
+
+  # Трейты #
+  trait_mytm_custom_title_flavor_trait: "Стиль титула"
+  trait_mytm_custom_title_flavor_trait_desc: "У этого персонажа есть наследуемый $mytm_custom_title_flavor$"
+  trait_mytm_custom_title_flavor_trait_exists_name: "[ROOT.Char.MakeScope.Var('mytm_var_title_flavor').Title.GetName]"
+  trait_mytm_custom_title_flavor_trait_exists_desc: "#medium У этого титула следующие $mytm_var_house_flavor_all_LocalizedText$#!"
+  mytm_var_house_flavor_all_LocalizedText: "$mytm_custom_title_flavor$: $mytm_var_house_flavor_character_LocalizedText$$mytm_var_house_flavor_knight_LocalizedText$$mytm_var_house_flavor_title_LocalizedText$$mytm_var_house_flavor_holding_LocalizedText$"
+  mytm_var_house_flavor_character_LocalizedText: "$mytm_var_house_flavor_character_holder_LocalizedText$$mytm_var_house_flavor_character_spouse_LocalizedText$$mytm_var_house_flavor_character_child_LocalizedText$$mytm_var_house_flavor_character_heir_LocalizedText$"
+  mytm_var_house_flavor_character_holder_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $mytm_house_flavor_male_text_default$#!: [ROOT.Char.GetLocalizedText( 'mytm_house_flavor_male_text' )]\n$EFFECT_LIST_BULLET$#E $mytm_house_flavor_female_text_default$#!: [ROOT.Char.GetLocalizedText( 'mytm_house_flavor_female_text' )]"
+  mytm_var_house_flavor_character_spouse_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $mytm_house_flavor_male_spouse_text_default$#!: [ROOT.Char.GetLocalizedText( 'mytm_house_flavor_male_spouse_text' )]\n$EFFECT_LIST_BULLET$#E $mytm_house_flavor_female_spouse_text_default$#!: [ROOT.Char.GetLocalizedText( 'mytm_house_flavor_female_spouse_text' )]"
+  mytm_var_house_flavor_character_child_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $mytm_house_flavor_male_child_text_default$#!: [ROOT.Char.GetLocalizedText( 'mytm_house_flavor_male_child_text' )]\n$EFFECT_LIST_BULLET$#E $mytm_house_flavor_female_child_text_default$#!: [ROOT.Char.GetLocalizedText( 'mytm_house_flavor_female_child_text' )]"
+  mytm_var_house_flavor_character_heir_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $mytm_house_flavor_male_heir_text_default$#!: [ROOT.Char.GetLocalizedText( 'mytm_house_flavor_male_heir_text' )]\n$EFFECT_LIST_BULLET$#E $mytm_house_flavor_female_heir_text_default$#!: [ROOT.Char.GetLocalizedText( 'mytm_house_flavor_female_heir_text' )]"
+  mytm_var_house_flavor_title_LocalizedText: "$mytm_var_house_flavor_title_empire_LocalizedText$$mytm_var_house_flavor_title_kingdom_LocalizedText$$mytm_var_house_flavor_title_duchy_LocalizedText$$mytm_var_house_flavor_title_county_LocalizedText$"
+  mytm_var_house_flavor_title_empire_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $empire_mytm_house_flavor_title_text_default$#!: [ROOT.Char.GetLocalizedText( 'empire_mytm_house_flavor_title_text' )]"
+  mytm_var_house_flavor_title_kingdom_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $kingdom_mytm_house_flavor_title_text_default$#!: [ROOT.Char.GetLocalizedText( 'kingdom_mytm_house_flavor_title_text' )]"
+  mytm_var_house_flavor_title_duchy_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $duchy_mytm_house_flavor_title_text_default$#!: [ROOT.Char.GetLocalizedText( 'duchy_mytm_house_flavor_title_text' )]"
+  mytm_var_house_flavor_title_county_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $county_mytm_house_flavor_title_text_default$#!: [ROOT.Char.GetLocalizedText( 'county_mytm_house_flavor_title_text' )]"
+  mytm_var_house_flavor_holding_LocalizedText: "$mytm_var_house_flavor_castle_holding_LocalizedText$$mytm_var_house_flavor_city_holding_LocalizedText$$mytm_var_house_flavor_church_holding_LocalizedText$$mytm_var_house_flavor_tribal_holding_LocalizedText$$mytm_var_house_flavor_extra_holding_LocalizedText$"
+  mytm_var_house_flavor_castle_holding_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $barony_mytm_house_flavor_title_castle_holding_text_default$#!: [ROOT.Char.GetLocalizedText( 'barony_mytm_house_flavor_title_castle_holding_text' )]"
+  mytm_var_house_flavor_city_holding_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $barony_mytm_house_flavor_title_city_holding_text_default$#!: [ROOT.Char.GetLocalizedText( 'barony_mytm_house_flavor_title_city_holding_text' )]"
+  mytm_var_house_flavor_church_holding_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $barony_mytm_house_flavor_title_church_holding_text_default$#!: [ROOT.Char.GetLocalizedText( 'barony_mytm_house_flavor_title_church_holding_text' )]"
+  mytm_var_house_flavor_tribal_holding_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $barony_mytm_house_flavor_title_tribal_holding_text_default$#!: [ROOT.Char.GetLocalizedText( 'barony_mytm_house_flavor_title_tribal_holding_text' )]"
+  mytm_var_house_flavor_extra_holding_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $barony_mytm_house_flavor_title_extra_holding_text_default$#!: [ROOT.Char.GetLocalizedText( 'barony_mytm_house_flavor_title_extra_holding_text' )]"
+  mytm_var_house_flavor_knight_LocalizedText: "\n$EFFECT_LIST_BULLET$#E $mytm_house_flavor_knight_text_default$#!: [ROOT.Char.GetLocalizedText( 'mytm_house_flavor_knight_text' )]"
+  # События #
+
+  mytm_custom_title_flavor_event_title.index: "Пользовательские стили: оглавление"
+  mytm_custom_title_flavor_event_desc.index: "Персонаж не может иметь два $mytm_custom_title_flavor$ одновременно. Если персонаж получает второй $mytm_custom_title_flavor$, будет сохранён стиль с более высоким рангом титула или тот, что был получен раньше, а другой удалён."
+  mytm_custom_title_flavor_event_title.ruler: "Пользовательский стиль: $game_concept_ruler$"
+  mytm_custom_title_flavor_event_title.spouse: "Пользовательский стиль: $game_concept_spouse$"
+  mytm_custom_title_flavor_event_title.child: "Пользовательский стиль: $relation_children$"
+  mytm_custom_title_flavor_event_title.heir: "Пользовательский стиль: $game_concept_primary_heir$"
+  mytm_custom_title_flavor_text_default: ""
+  mytm_house_flavor_male_text_default: "Мужской стиль"
+  mytm_house_flavor_female_text_default: "Женский стиль"
+  mytm_house_flavor_male_spouse_text_default: "Стиль мужа"
+  mytm_house_flavor_female_spouse_text_default: "Стиль жены"
+  mytm_house_flavor_male_child_text_default: "Стиль сына"
+  mytm_house_flavor_female_child_text_default: "Стиль дочери"
+  mytm_house_flavor_male_heir_text_default: "Стиль наследника (муж.)"
+  mytm_house_flavor_female_heir_text_default: "Стиль наследницы (жен.)"
+  mytm_set_house_flavor_heir_tt: "#T @warning_icon! Чтобы задать стиль для $game_concept_primary_heir$, сначала задайте стиль для $relation_children$#!"
+  # Хранить стиль супруга после смерти
+
+  trait_mytm_custom_spouse_flavor_trait: "$trait_mytm_custom_only_holder_flavor_trait$"
+  trait_mytm_custom_spouse_flavor_trait_desc: "$trait_mytm_custom_only_holder_flavor_trait_desc$"
+  ### Титулы ###
+
+  mytm_custom_title_flavor_event_title.title_name: "Пользовательский стиль: $game_concept_title$"
+  empire_mytm_house_flavor_title_text_default: "Титул империи"
+  kingdom_mytm_house_flavor_title_text_default: "Титул королевства"
+  duchy_mytm_house_flavor_title_text_default: "Титул герцогства"
+  county_mytm_house_flavor_title_text_default: "Титул графства"
+  ### Владения ###
+
+  mytm_custom_title_flavor_event_title.holding_name: "Пользовательский стиль: $game_concept_holding$"
+  barony_mytm_house_flavor_title_castle_holding_text_default: "Замковое владение"
+  barony_mytm_house_flavor_title_city_holding_text_default: "Городское владение"
+  barony_mytm_house_flavor_title_church_holding_text_default: "Храмовое владение"
+  barony_mytm_house_flavor_title_tribal_holding_text_default: "Племенное владение"
+  barony_mytm_house_flavor_title_extra_holding_text_default: "Другое владение"
+  ### Рыцари ###
+
+  mytm_custom_title_flavor_event_title.knight: "Пользовательский стиль: $game_concept_knight$"
+  mytm_house_flavor_knight_text_default: "Имя рыцаря"

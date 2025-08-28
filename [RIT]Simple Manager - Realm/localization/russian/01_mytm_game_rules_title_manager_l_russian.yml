@@ -1,0 +1,51 @@
+﻿l_russian:
+  #### Ограничения целей для взаимодействий ####
+  rule_rit_rules_valid_recipient_realm: "#M RIT#!: Управление державой – Диапазон взаимодействия"
+  setting_rit_rules_valid_recipient_realm_all: "Все"
+  setting_rit_rules_valid_recipient_realm_all_desc: "Игрок может использовать это взаимодействие почти со всеми персонажами под управлением ИИ"
+  setting_rit_rules_valid_recipient_realm_only_realm: "$game_concept_realm$"
+  setting_rit_rules_valid_recipient_realm_only_realm_desc: "Игрок может использовать это взаимодействие только с [vassal|E] и [courtier|E] ИИ в пределах своей [realm|E]"
+  setting_rit_rules_valid_recipient_realm_only_family: "$game_concept_family$"
+  setting_rit_rules_valid_recipient_realm_only_family_desc: "Игрок может использовать это взаимодействие только с персонажами [family|E] в пределах своей [realm|E]"
+  setting_rit_rules_valid_recipient_realm_only_self: "Само"
+  setting_rit_rules_valid_recipient_realm_only_self_desc: "Игрок может использовать это взаимодействие только на себе"
+  setting_rit_rules_valid_recipient_realm_only_debug: "Отладка"
+  setting_rit_rules_valid_recipient_realm_only_debug_desc: "Игрок может использовать это взаимодействие только для целей отладки"
+  
+  #### Массовый выбор ####
+
+  mytm_title_manager_option_flag_mass_select_de_jure_empire: "#M Массовый выбор#! @empire_icon![empire|E] титулов"
+  mytm_title_manager_option_flag_mass_select_de_jure_kingdom: "#M Массовый выбор#! @kingdom_icon![kingdom|E] титулов"
+  mytm_title_manager_option_flag_mass_select_de_jure_duchy: "#M Массовый выбор#! @duchy_icon![duchy|E] титулов"
+  mytm_title_manager_option_flag_mass_select_de_jure_county: "#M Массовый выбор#! @county_icon![county|E] титулов"
+  mytm_title_manager_option_flag_mass_select_de_jure_barony: "#M Массовый выбор#! @barony_icon![barony|E] титулов"
+
+  ## Типы владений ##
+  mytm_holding_manager_option_flag_mass_select_castle_holding: "#M Массовый выбор#! @castle_holding_icon![castles|E]"
+  mytm_holding_manager_option_flag_mass_select_city_holding: "#M Массовый выбор#! @city_holding_icon![cities|E]"
+  mytm_holding_manager_option_flag_mass_select_church_holding: "#M Массовый выбор#! @church_holding_icon![temples|E]"
+  mytm_holding_manager_option_flag_mass_select_tribal_holding: "#M Массовый выбор#! @tribal_holding_icon![tribes|E]"
+  mytm_holding_manager_option_flag_mass_select_nomad_holding: "#M Массовый выбор#! @nomad_holding_icon![nomadic_holding|E]"
+  mytm_holding_manager_option_flag_mass_select_herder_holding: "#M Массовый выбор#! @herder_holding_icon![herder_holding|E]"
+  mytm_holding_manager_option_flag_mass_select_extra_holding: "#M Массовый выбор#! @building_icon!#E Другое#! владения"
+
+  ##
+  mytm_title_manager_option_flag_protect_primary_title: "#N Исключить#! ваш [primary_title|E]"
+  mytm_title_manager_option_flag_protect_realm_capital: "#N Исключить#! вашу [realm_capital|E]"
+  mytm_title_manager_option_flag_protect_current_title: "#N Исключить#! текущий титул"
+  mytm_title_manager_option_flag_protect_domain: "#N Исключить#! [domain|E] текущего персонажа"
+  mytm_title_manager_option_flag_protect_direct_vassal: "#N Исключить#! [direct_vassal|E] текущего персонажа"
+  mytm_title_manager_option_flag_protect_no_direct_vassal: "#N Исключить#! персонажей, не являющихся [direct_vassal|E] текущего персонажа"
+
+  ##
+  mytm_title_manager_option_flag_mass_select_de_jure_only: "#P Должно принадлежать#! [de_jure|E] текущего титула"
+  mytm_title_manager_option_flag_mass_select_all_realm: "#P Выбрать#! всех [vassal|E] текущего персонажа"
+  mytm_title_manager_option_flag_mass_select_de_jure_vassal: "#P Выбрать#! всех [de_jure|P] [direct_vassal|E] текущего персонажа"
+  mytm_title_manager_option_flag_mass_select_no_de_jure_vassal: "#P Выбрать#! всех #N не-[de_jure|N]#! [direct_vassal|E] текущего персонажа"
+
+  ## Тексты ##
+  mytm_title_manager_mass_select_event.title: "Массовое управление"
+  mytm_title_manager_mass_select_event.desc: ""
+  mytm_title_manager_has_selecte_title_tt: "[mytm_target_title.GetName] выбран"
+  mytm_title_manager_has_options_exclusive_tt: "Выбраны взаимоисключающие параметры"
+  mytm_title_manager_no_current_target_titles_tt: "#T;X @warning_icon!Нет доступных титулов#!"

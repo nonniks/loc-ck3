@@ -1,0 +1,23 @@
+﻿l_russian:
+  rule_rit_rules_valid_recipient_custom_title_flavor: "#M RIT#!: Управление прозвищами — область взаимодействия"
+  setting_rit_rules_valid_recipient_custom_title_flavor_all: "Все"
+  setting_rit_rules_valid_recipient_custom_title_flavor_all_desc: "Игроки могут использовать это взаимодействие почти со всеми персонажами ИИ"
+  setting_rit_rules_valid_recipient_custom_title_flavor_only_realm: "$game_concept_realm$"
+  setting_rit_rules_valid_recipient_custom_title_flavor_only_realm_desc: "Игроки могут использовать это взаимодействие только с персонажами ИИ [vassal|E] и [courtier|E] в пределах своей [realm|E]"
+  setting_rit_rules_valid_recipient_custom_title_flavor_only_family: "$game_concept_family$"
+  setting_rit_rules_valid_recipient_custom_title_flavor_only_family_desc: "Игроки могут использовать это взаимодействие только с персонажами ИИ из [family|E] в пределах своей [realm|E]"
+  setting_rit_rules_valid_recipient_custom_title_flavor_only_self: "Сам"
+  setting_rit_rules_valid_recipient_custom_title_flavor_only_self_desc: "Игроки могут использовать это взаимодействие только на себе"
+  #
+
+  rule_rit_rules_valid_recipient_custom_character_relation: "#M RIT#!: Управление семьёй — область взаимодействия"
+  setting_rit_rules_valid_recipient_custom_character_relation_all: "Все"
+  setting_rit_rules_valid_recipient_custom_character_relation_all_desc: "Игроки могут использовать это взаимодействие почти со всеми персонажами ИИ"
+  setting_rit_rules_valid_recipient_custom_character_relation_only_realm: "$game_concept_realm$"
+  setting_rit_rules_valid_recipient_custom_character_relation_only_realm_desc: "Игроки могут использовать это взаимодействие только с персонажами ИИ [vassal|E] и [courtier|E] в пределах своей [realm|E]"
+  setting_rit_rules_valid_recipient_custom_character_relation_only_family: "$game_concept_family$"
+  setting_rit_rules_valid_recipient_custom_character_relation_only_family_desc: "Игроки могут использовать это взаимодействие только с персонажами ИИ из [family|E] в пределах своей [realm|E]"
+  setting_rit_rules_valid_recipient_custom_character_relation_only_self: "Сам"
+  setting_rit_rules_valid_recipient_custom_character_relation_only_self_desc: "Игроки могут использовать это взаимодействие только на себе"
+  setting_rit_rules_valid_recipient_custom_character_relation_prohibit: "Отключено"
+  setting_rit_rules_valid_recipient_custom_character_relation_prohibit_desc: "Это взаимодействие отключено"

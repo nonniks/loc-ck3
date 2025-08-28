@@ -1,0 +1,196 @@
+﻿l_russian:
+  #### Encyclopedia ####
+  mytm_high_rarity_artifact: "Артефакт высокой редкости"
+  game_concept_mytm_high_rarity_artifact: "$mytm_high_rarity_artifact$"
+  game_concept_mytm_high_rarity_artifact_desc: "$game_concept_mytm_high_rarity_artifact$ — примечательные [artifact|E]. Примеры:\n$BULLET_WITH_TAB$$illustrious$ [rarity|E] артефакты\n$BULLET_WITH_TAB$Религиозные реликвии\n$BULLET_WITH_TAB$Исторические артефакты\n$BULLET_WITH_TAB$[mytm_unique_artifact|E]"
+  mytm_low_rarity_artifact: "Артефакт низкой редкости"
+  game_concept_mytm_low_rarity_artifact: "$mytm_low_rarity_artifact$"
+  game_concept_mytm_low_rarity_artifact_desc: "$game_concept_mytm_low_rarity_artifact$ — любой [artifact|E], который не является [mytm_high_rarity_artifact|E]."
+  #### Scope Selection Options ####
+
+  mytm_manager_artifact_tooltip_has_options_exclusive: "Выбран эксклюзивный вариант"
+  mytm_manager_artifact_tooltip_has_options_only_target: "Массовый выбор недоступен"
+  mytm_manager_artifact_option_flag_mass_select_high_rarity: "#M Массовый выбор#! [mytm_high_rarity_artifact|P]"
+  mytm_manager_artifact_option_flag_mass_select_low_rarity: "#M Массовый выбор#! [mytm_low_rarity_artifact|N]"
+  mytm_manager_artifact_option_flag_mass_select_equipped: "#M Массовый выбор#!#P Экипированные#!#E Артефакты#!"
+  mytm_manager_artifact_option_flag_mass_select_no_equipped: "#M Массовый выбор#!#N Неэкипированные#!#E Артефакты#!"
+  # Artifact Slots
+
+  mytm_manager_artifact_option_flag_mass_select_same_artifact_slot_type: "Тот же #E слот артефакта#!"
+  mytm_manager_same_artifact_slot_type_tt: "Текущий артефакт занимает #E [target.Artifact.GetSlotType]#!"
+  mytm_manager_artifact_option_flag_mass_select_same_as_designee_artifact_slot_type: "Тот же #E слот артефакта#!, что и у $mytm_designee_artifact$"
+  mytm_manager_same_as_designee_artifact_slot_type_tt: "Текущий $mytm_designee_artifact$ занимает #E [actor.MakeScope.Var('mytm_variable_designee_artifact').Artifact.GetSlotType]#!"
+  #
+
+  mytm_var_flag_artifact_rarity: "Редкость артефакта"
+  mytm_var_flag_artifact_rarity_high: "$mytm_var_flag_artifact_rarity$: [mytm_high_rarity_artifact|P]"
+  mytm_var_flag_artifact_rarity_low: "$mytm_var_flag_artifact_rarity$: [mytm_low_rarity_artifact|N]"
+  mytm_var_flag_artifact_rarity_all: "$mytm_var_flag_artifact_rarity$: #M Игнорировать#!"
+  mytm_manager_artifact_tooltip_has_select_rarity: "Не выбрана опция #E $mytm_var_flag_artifact_rarity$#!"
+  mytm_var_flag_artifact_rarity_loc: "[recipient.MakeScope.Var('mytm_var_flag_artifact_rarity').GetFlagName|U]"
+  mytm_var_flag_artifact_equipped: "Статус экипировки"
+  mytm_var_flag_artifact_equipped_has: "$mytm_var_flag_artifact_equipped$: #P Экипирован#!"
+  mytm_var_flag_artifact_equipped_no: "$mytm_var_flag_artifact_equipped$: #N Не экипирован#!"
+  mytm_var_flag_artifact_equipped_all: "$mytm_var_flag_artifact_equipped$: #M Игнорировать#!"
+  mytm_manager_artifact_tooltip_has_select_equipped: "Не выбрана опция #E $mytm_var_flag_artifact_equipped$#!"
+  mytm_var_flag_artifact_equipped_loc: "[recipient.MakeScope.Var('mytm_var_flag_artifact_equipped').GetFlagName|U]"
+  ### Artifact Selection ###
+
+  mytm_manager_artifact_select_interaction: "Управление артефактами"
+  mytm_manager_artifact_select_interaction_desc: ""
+  ## Options ##
+
+  mytm_manager_artifact_option_flag_open_view_artifact_details: "Показать #E $ARTIFACT_DETAILS_TITLE$#!"
+  ## Immortal Artifacts ##
+
+  mytm_no_decay_artifact: "Неизнашиваемый артефакт"
+  game_concept_mytm_no_decay_artifact: "$mytm_no_decay_artifact$"
+  game_concept_mytm_no_decay_artifact_desc: "$game_concept_mytm_no_decay_artifact$ — это [artifact|E], которые естественным образом не теряют [durability|E] (кроме случаев через события)."
+  mytm_manager_artifact_option_flag_no_decay: "Создать [mytm_no_decay_artifact|E]"
+  mytm_manager_artifact_option_flag_no_decay_effect_tooltip: "[artifact.GetName] становится [mytm_no_decay_artifact|E]"
+  mytm_manager_artifact_is_no_decay: "#V [target.GetNameNoTooltip]#! уже является [mytm_no_decay_artifact|E]"
+  ## Unique Artifacts ##
+
+  mytm_unique_artifact: "Уникальный артефакт"
+  game_concept_mytm_unique_artifact: "$mytm_unique_artifact$"
+  game_concept_mytm_unique_artifact_desc: "$game_concept_mytm_unique_artifact$ имеют золотую окантовку и обычно являются религиозными реликвиями или историческими артефактами."
+  mytm_manager_artifact_option_flag_reforge_unique: "Сделать [mytm_unique_artifact|E]"
+  mytm_manager_artifact_option_flag_reforge_unique_effect_tooltip: "[artifact.GetName] становится [mytm_unique_artifact|E], требования к использованию сняты"
+  mytm_manager_artifact_is_unique: "#V [target.GetNameNoTooltip]#! уже является [mytm_unique_artifact|E]"
+  ## Remove Usage Requirements ##
+
+  mytm_manager_artifact_option_flag_reforge_general: "Убрать #E требования к использованию#!"
+  mytm_manager_artifact_option_flag_reforge_general_effect_tooltip: "Требования к использованию для [artifact.GetName] сняты"
+  mytm_manager_artifact_is_can_equip: "@warning_icon!#medium [artifact.GetName]#!#X Уже можно использовать#!"
+  ## Clear Artifact Claims ##
+
+  mytm_manager_artifact_option_flag_remove_claim: "Снять [artifact_claim|E]"
+  mytm_manager_artifact_house_remove_claim_tooltip: "Династия [artifact_claim_house.GetName] теряет претензию [house|E] на [artifact.GetName]"
+  mytm_manager_artifact_has_other_claim: "Нет претензий у других ИИ-персонажей"
+  ## Improve Artifacts ##
+
+  mytm_manager_artifact_option_flag_improve: "Улучшить #E эффекты артефакта#!"
+  mytm_manager_artifact_improved_num_tt: "[artifact_target.GetName] улучшен [artifact_target.MakeScope.Var('artifact_improvements').GetValue|0P] раз"
+  mytm_manager_artifact_event_improve.title: "Улучшить артефакт"
+  mytm_manager_artifact_event_improve.desc: "$mytm_manager_artifact_improved_num_tt$"
+  mytm_manager_artifact_event_improve_option.a: "Случайно улучшить #P 1#! раз"
+  mytm_manager_artifact_event_improve_option.b: "Случайно улучшить #P 3#! раза"
+  mytm_manager_artifact_event_improve_option.c: "Случайно улучшить #P 10#! раз"
+  mytm_manager_artifact_event_improve_option.clear: "#N Удалить все эффекты#!"
+  mytm_artifact_rarity_tt.a: "Изменить качество на: Обычный"
+  mytm_artifact_rarity_tt.b: "Изменить качество на: $masterwork$"
+  mytm_artifact_rarity_tt.c: "Изменить качество на: $famed$"
+  mytm_artifact_rarity_tt.d: "Изменить качество на: $illustrious$"
+  ## Repair Artifacts ##
+
+  mytm_manager_artifact_repair_interaction: "Массовое управление артефактами"
+  mytm_manager_artifact_repair_interaction_desc: ""
+  mytm_manager_artifact_option_flag_repair_mass: "Массовый [repair_artifact|E]"
+  mytm_manager_artifact_option_flag_repair_mass_tooltip: "Отремонтировать все артефакты с прочностью ниже 75%"
+  mytm_tooltip_repair_artifact: "[artifact.GetName] отремонтирован"
+  mytm_manager_artifact_option_flag_repair_auto: "Автоматический [repair_artifact|E]"
+  mytm_manager_artifact_option_flag_repair_auto_on: "Авто-ремонт: #P Включен#!"
+  mytm_manager_artifact_option_flag_repair_auto_off: "Авто-ремонт: #N Выключен#!"
+  mytm_manager_artifact_option_flag_repair_auto_on_tooltip: "Каждые #P 5#! лет ремонтировать артефакты этих типов с прочностью ниже 20%"
+  mytm_manager_artifact_option_flag_repair_auto_off_tooltip: "Текущие типы артефактов для авто-ремонта:"
+  mytm_manager_artifact_option_flag_repair_auto_warning_tooltip: "@alert_icon!При смене персонажа не через наследование (напр., $game_concept_depose$, $choose_destiny_header_text$ или консоль) сбросьте эту опцию"
+  mytm_manager_artifact_repair_no_enough_gold_tooltip: "@warning_icon!#X Недостаточно [gold_i] золота, стоимость возвращена#!"
+  ### Bulk Destruction ###
+
+  mytm_manager_artifact_destroy_interaction: "Уничтожить артефакты"
+  mytm_manager_artifact_destroy_interaction_desc: "Уничтожить неэкипированные артефакты"
+  mytm_manager_artifact_option_flag_destroy_get_piety: "Получить [piety|E]"
+  ### Artifact Fusion ###
+
+  mytm_manager_artifact_combine_interaction: "Объединить артефакты"
+  mytm_manager_artifact_combine_interaction_desc: "Объединить неэкипированные [artifact|E]"
+  mytm_manager_artifact_option_flag_designee: "Назначить $mytm_designee_artifact$"
+  mytm_tooltip_select_designee_artifact: "[target.GetName] назначен как $mytm_designee_artifact$"
+  mytm_manager_artifact_option_flag_clear: "Сбросить $mytm_designee_artifact$"
+  mytm_tooltip_clear_designee_artifact: "[this_artifact.GetName] больше не $mytm_designee_artifact$"
+  ## Fusion Receiver ##
+
+  mytm_designee_artifact: "#P Получатель слияния#!"
+  mytm_tooltip_exists_designee_artifact: "Есть $mytm_designee_artifact$"
+  mytm_tooltip_is_designee_artifact: "#V [target.GetNameNoTooltip]#! — это $mytm_designee_artifact$"
+  ## Text ##
+
+  mytm_tooltip_combine_that_artifact_name: "[this_artifact.GetDesc]\nСлит с #E [that_artifact.GetNameNoTooltip]#!."
+  mytm_tooltip_combine_that_artifact_desc: "[this_artifact.GetDesc] слит с #E [that_artifact.GetNameNoTooltip]#!."
+  mytm_tooltip_combine_that_artifact_effect: "[this_artifact.GetName] слит с [that_artifact.GetName]"
+  mytm_tooltip_combine_that_artifact_effect_message: "[this_artifact.GetName] слит с #E [that_artifact.GetNameNoTooltip]#!"
+  ### Custom Descriptions ###
+
+  mytm_manager_artifact_option_flag_new_desc: "Изменить #E текст артефакта#!"
+  mytm_manager_artifact_event_new_desc.title: "Изменить текст артефакта"
+  mytm_manager_artifact_event_new_desc.desc: ""
+  mytm_manager_artifact_text_default: ""
+  mytm_manager_artifact_text_orginal_desc: "[mytm_target_artifact.GetDesc]"
+  mytm_manager_artifact_text_orginal_name: "[mytm_target_artifact.GetNameNoTooltip]"
+  mytm_manager_artifact_option_new_desc_newline: "Добавить с новой строки"
+  mytm_manager_artifact_option_new_desc_tt: "Добавить напрямую"
+  mytm_manager_artifact_option_new_desc: "Заменить описание"
+  mytm_manager_artifact_option_new_name: "Переименовать артефакт"
+  mytm_manager_artifact_text_new_desc_newline: "[mytm_target_artifact.GetDesc]\n\n[GetPlayer.GetLocalizedText( 'test_saved_text' )]"
+  mytm_manager_artifact_text_new_desc_tt: "[mytm_target_artifact.GetDesc][GetPlayer.GetLocalizedText( 'test_saved_text' )]"
+  mytm_manager_artifact_text_new_desc: "[GetPlayer.GetLocalizedText( 'test_saved_text' )]"
+  ### Bulk Manage Others' Artifacts ###
+
+  mytm_manager_artifact_buy_claim_interaction: "Изъять артефакты"
+  mytm_manager_artifact_buy_claim_interaction_desc: ""
+  mytm_manager_artifact_option_flag_buy_claim: "Купить претензию"
+  mytm_manager_artifact_is_valid_claim: "У вас уже есть претензия на этот артефакт"
+  mytm_manager_artifact_is_has_claim: "Нет претензии на этот артефакт"
+  mytm_manager_artifact_is_selected: "[artifact.GetName] выбран"
+  mytm_artifacts_buy_claim_list_tooltip: "Без стоимости претензии: [recipient.GetShortUINameNoTooltip] не имеет земель"
+  #$demand_artifact_interaction$
+
+  mytm_manager_artifact_option_flag_demand: "Конфисковать артефакт"
+  #$challenge_for_artifact_interaction$
+
+  mytm_manager_artifact_option_flag_challenge: "Турнир за артефакт"
+  mytm_manager_artifact_option_flag_challenge_chess: "Настольная игра"
+  mytm_manager_artifact_event_challenge_chess.title: "Выбрать вид настольной игры"
+  mytm_manager_artifact_event_challenge_chess.desc: ""
+  ### World Artifact List ###
+
+  mytm_manager_artifact_world_list_decisions: "Список артефактов мира"
+  mytm_manager_artifact_world_list_decisions_desc: ""
+  mytm_manager_artifact_world_list_decisions_tooltip: "Посмотреть [mytm_high_rarity_artifact|E] у других"
+  mytm_manager_artifact_world_list_decisions_confirm: "$CLOSE_LABEL$"
+  mytm_manager_artifact_world_list_decisions_second_step_button: "$VIEW_CLICK$"
+  mytm_tooltip_manager_artifact_world_list_get_name: "#V [artifact_list.GetName]#!([artifact_list.GetType])"
+  mytm_tooltip_manager_artifact_world_list_get_owner_name: "#V [artifact_list.GetName]#!|#M [artifact_list.GetType]#!|[artifact_owner.GetShortUIName]"
+  mytm_tooltip_manager_artifact_world_list_get_artifact_owner: "Текущий владелец: [artifact_owner.GetName]\n"
+  mytm_manager_artifact_world_list_decisions_flag_in_diplomatic_range: "В пределах дипломатической досягаемости"
+  mytm_manager_artifact_world_list_decisions_flag_in_diplomatic_range_tooltip: "Исключает $game_concept_spouse$, $game_concept_concubinage$, $game_concept_courtier$, $game_concept_vassal$, $game_concept_dynasty_members$"
+  mytm_manager_artifact_world_list_decisions_flag_my_vassal: "Мой вассал"
+  mytm_manager_artifact_world_list_decisions_flag_my_vassal_tooltip: "Исключает $game_concept_spouse$ и $game_concept_concubinage$"
+  mytm_manager_artifact_world_list_decisions_flag_my_courtier: "Мой придворный"
+  mytm_manager_artifact_world_list_decisions_flag_my_courtier_tooltip: "Исключает $game_concept_spouse$ и $game_concept_concubinage$"
+  mytm_manager_artifact_world_list_decisions_flag_my_consort: "Супруги и наложницы"
+  mytm_manager_artifact_world_list_decisions_flag_my_consort_tooltip: ""
+  mytm_manager_artifact_world_list_decisions_flag_my_consort_valid_tooltip: "Нет супруга или наложниц"
+  mytm_manager_artifact_world_list_decisions_flag_my_dynasty: "Члены династии"
+  mytm_manager_artifact_world_list_decisions_flag_my_dynasty_tooltip: "Исключает $game_concept_spouse$ и $game_concept_concubinage$"
+  mytm_manager_artifact_world_list_decisions_flag_not_in_diplomatic_range: "Вне дипломатической досягаемости"
+  mytm_manager_artifact_world_list_decisions_flag_not_in_diplomatic_range_tooltip: ""
+  mytm_manager_artifact_world_list_decisions_flag_all_world: "Весь мир"
+  mytm_manager_artifact_world_list_decisions_flag_all_world_tooltip: ""
+  ### Game Rules ###
+
+  rule_ritsm_combine_artifact_cost_game_rules: "#M RIT#!: Управление артефактами — Стоимость слияния"
+  setting_combine_artifact_cost_0_percent: "Бесплатно"
+  setting_combine_artifact_cost_0_percent_desc: "Слияние артефактов ничего не стоит. Сильно разбалансировано. Но какая разница? Играйте в своё удовольствие!"
+  setting_combine_artifact_cost_25_percent: "25%"
+  setting_combine_artifact_cost_25_percent_desc: "Стоимость слияния — 25% стоимости артефакта. Сильно разбалансировано."
+  setting_combine_artifact_cost_50_percent: "50%"
+  setting_combine_artifact_cost_50_percent_desc: "Стоимость слияния — 50% стоимости артефакта. Умеренно разбалансировано."
+  setting_combine_artifact_cost_100_percent: "100%"
+  setting_combine_artifact_cost_100_percent_desc: "Стоимость слияния — 100% стоимости артефакта. Слегка разбалансировано."
+  setting_combine_artifact_cost_200_percent: "200%"
+  setting_combine_artifact_cost_200_percent_desc: "Стоимость слияния — 200% стоимости артефакта. Разумная настройка."
+  setting_combine_artifact_cost_300_percent: "300%"
+  setting_combine_artifact_cost_300_percent_desc: "Стоимость слияния — 300% стоимости артефакта. Сбалансированное значение по умолчанию."
+  setting_combine_artifact_cost_400_percent: "Стоимость университета"
+  setting_combine_artifact_cost_400_percent_desc: "Мы до сих пор не понимаем, почему шведские университеты так дорого стоят..."

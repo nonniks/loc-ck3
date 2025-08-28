@@ -1,0 +1,17 @@
+﻿l_russian:
+ ### 性格文本 ###
+ AI_PERSONALITY_TT: "$MYTM_PERSONALITY_SUMMARY_TT$\n$MYTM_PERSONALITY_VALUES_TT$\n\n[Character.GetAIPersonalityExplanation]"
+ ### 死亡原因 ###
+ CHARACTER_DEAD_TOOLTIP: "$MYTM_CHARACTER_ID_TT$$MYTM_CHARACTER_DEAD_TOOLTIP$"
+ ### 性取向 ###
+ sexuality_ho: "[homosexual]"
+ sexuality_he: "[heterosexual]"
+ sexuality_bi: "[bisexual]"
+ sexuality_as: "[asexual]"
+ ### 健康 ###
+ HEALTH_INFO: "$MYTM_REAL_FATHER_TT$$MYTM_CHARACTER_HEALTH_TT$"
+ ### 婚姻关系 ###
+ cooltip_spouse_listing: "$MYTM_CHARACTER_PERSONALITY_TT$[spouse|E]: [ROOT.Char.GetPrimarySpouseOrBetrothed.GetName]\n$MYTM_CHARACTER_INFO_TT$"
+ cooltip_betrothed_listing: "$MYTM_CHARACTER_PERSONALITY_TT$[betrothed|E]: [ROOT.Char.GetPrimarySpouseOrBetrothed.GetName]\n$MYTM_CHARACTER_INFO_TT$"
+ cooltip_concubine_listing: "$MYTM_CHARACTER_PERSONALITY_TT$[concubine|E]: [ROOT.Char.GetConcubinist.GetName]\n$MYTM_CHARACTER_INFO_TT$"
+ cooltip_unmarried_listing: "$MYTM_CHARACTER_PERSONALITY_TT$$not_married_filter$\n$MYTM_CHARACTER_INFO_TT$"

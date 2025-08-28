@@ -1,0 +1,9 @@
+﻿l_russian:
+  mytm_manager_title_gui: "Управлять $mytm_target_title$"
+  mytm_manager_title_gui_tooltip: "#T $mytm_manager_title_gui$#!"
+  mytm_manager_set_designee_title_gui: "Назначить $mytm_designee_title$"
+  mytm_manager_set_designee_title_gui_tooltip: "#T $mytm_manager_set_designee_title_gui$#!\n\nПКМ, чтобы #N очистить#! $mytm_designee_title$"
+  mytm_title_ui_manager_designee_title_tooltip: "[GetPlayer.MakeScope.Var('mytm_designee_title').Title.GetName]"
+  mytm_title_window_ui_manager_name: "$mytm_designee_title$:"
+  mytm_manager_holding_gui: "Управлять @building_icon!#E текущим владением#!"
+  mytm_manager_holding_gui_tooltip: "#T $mytm_manager_holding_gui$#!"
